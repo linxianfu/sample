@@ -103,6 +103,27 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+		'email' => [
+			'required'		=> '请填写邮箱地址',
+			'email'			=> '请填写正确的邮箱地址',
+			'unique'		=> '邮箱已被注册',
+			'max'			=> '邮箱地址长度不能超过64个字符'
+		],
+		'password' => [
+			'required'	=> '请填写密码',
+			'confirmed'	=> '两次密码不匹配',
+			'min'		=> '密码长度不能低于6位字符'
+		],
+		'name'	=> [
+			'required'	=> '请填写用户名',
+			'max'		=> '用户名不能超过6个汉字或6个字符',
+			'min'		=> '用户名不能低于2个汉字或2个字符'
+		],
+		'password_confirmation'	=> [
+			'required'	=> '请填写确认密码',
+			'confirmed'	=> '两次密码不匹配',
+			'min'		=> '密码长度不能低于6位字符'
+		]
     ],
 
     /*

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bc2e8b716c4e972defbb1e89388dc698",
-    "content-hash": "80ad1047549137a48df7b1ceca3cfc61",
+    "hash": "6989050d003bb1e1b8e25ad2dd861966",
+    "content-hash": "9ed934c50c5ba8d36adc8940e7b640e4",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -128,6 +128,48 @@
                 }
             ],
             "time": "2016-06-13 19:28:20"
+        },
+        {
+            "name": "caouecs/laravel-lang",
+            "version": "3.0.35",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caouecs/Laravel-lang.git",
+                "reference": "7c4c87b366ee3a17860e9371f339e7158d560caf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/caouecs/Laravel-lang/7c4c87b366ee3a17860e9371f339e7158d560caf.zip",
+                "reference": "7c4c87b366ee3a17860e9371f339e7158d560caf",
+                "shasum": ""
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^1.10"
+            },
+            "suggest": {
+                "ablunier/laravel-lang-installer": "Command for easily add languages to a Laravel project",
+                "arcanedev/laravel-lang": "Translations manager and checker for Laravel 5",
+                "overtrue/laravel-lang": "Command to add languages in your project"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "caouecs",
+                    "email": "caouecs@caouecs.net"
+                }
+            ],
+            "description": "Languages for Laravel",
+            "keywords": [
+                "lang",
+                "languages",
+                "laravel",
+                "lpm"
+            ],
+            "time": "2017-06-09 08:16:13"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -532,12 +574,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "573f85c3dd968f97081382b6f633b0a08b51fed5"
+                "reference": "750afcfedba64c36a09e6970de68519efa937154"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/laravel/framework/573f85c3dd968f97081382b6f633b0a08b51fed5.zip",
-                "reference": "573f85c3dd968f97081382b6f633b0a08b51fed5",
+                "url": "https://files.phpcomposer.com/files/laravel/framework/750afcfedba64c36a09e6970de68519efa937154.zip",
+                "reference": "750afcfedba64c36a09e6970de68519efa937154",
                 "shasum": ""
             },
             "require": {
@@ -656,7 +698,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-08-16 19:07:13"
+            "time": "2017-08-17 18:35:35"
         },
         {
             "name": "laravel/tinker",
@@ -1029,6 +1071,57 @@
                 "php"
             ],
             "time": "2017-07-28 14:45:09"
+        },
+        {
+            "name": "overtrue/laravel-lang",
+            "version": "3.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/overtrue/laravel-lang.git",
+                "reference": "914fc271b5040621daabac49ac422909bae1936f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/overtrue/laravel-lang/914fc271b5040621daabac49ac422909bae1936f.zip",
+                "reference": "914fc271b5040621daabac49ac422909bae1936f",
+                "shasum": ""
+            },
+            "require": {
+                "caouecs/laravel-lang": "~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Overtrue\\LaravelLang\\TranslationServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Overtrue\\LaravelLang\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "overtrue",
+                    "email": "anzhengchao@gmail.com"
+                }
+            ],
+            "description": "List of 52 languages for Laravel 5",
+            "keywords": [
+                "languages",
+                "laravel",
+                "overtrue"
+            ],
+            "time": "2017-07-31 02:22:53"
         },
         {
             "name": "paragonie/random_compat",
